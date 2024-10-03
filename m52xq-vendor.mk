@@ -14,6 +14,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m52xq/proprietary/vendor/etc/audconf/OPEN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Headset_cal.acdb \
     vendor/samsung/m52xq/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
     vendor/samsung/m52xq/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
+    vendor/samsung/m52xq/proprietary/vendor/etc/nfc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_hwreg.bin \
+    vendor/samsung/m52xq/proprietary/vendor/etc/nfc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_swreg.bin \
     vendor/samsung/m52xq/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FA9_AMB667UM36_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E3FA9_AMB667UM36_FHD.xml \
     vendor/samsung/m52xq/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD01_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD01_FHD.xml \
     vendor/samsung/m52xq/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3HAB_AMB667AN01_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E3HAB_AMB667AN01_FHD.xml \
@@ -26,8 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m52xq/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/m52xq/proprietary/vendor/firmware/bt_nvm_loading.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading.xml \
     vendor/samsung/m52xq/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/qca6750/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6750/bdwlan.elf \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/qca6750/bdwlan.elf10:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6750/bdwlan.elf10 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/nfc/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn4v_firmware.bin \
     vendor/samsung/m52xq/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/samsung/m52xq/proprietary/vendor/firmware/tsp_synaptics/s3908_m52xq_boe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_m52xq_boe.bin \
     vendor/samsung/m52xq/proprietary/vendor/firmware/tsp_synaptics/s3908_m52xq_sdc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_synaptics/s3908_m52xq_sdc.bin \
@@ -58,6 +59,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev4/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev4/wpss.b06 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev4/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev4/wpss.b07 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev4/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev4/wpss.mdt \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b00 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b01 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b02 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b03 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b04 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b05 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b06 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b07 \
+    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.mdt \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526br/rev1/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526br/rev1/wpss.b01 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526br/rev1/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526br/rev1/wpss.mdt \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526br/rev2/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526br/rev2/wpss.b01 \
@@ -82,15 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526br/rev5/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526br/rev5/wpss.b06 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526br/rev5/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526br/rev5/wpss.b07 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526br/rev5/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526br/rev5/wpss.mdt \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b00 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b01 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b02 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b03 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b04 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b05 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b06 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.b07 \
-    vendor/samsung/m52xq/proprietary/vendor/firmware/wlan/m526b/rev5/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/m526b/rev5/wpss.mdt \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b00 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b01 \
     vendor/samsung/m52xq/proprietary/vendor/firmware/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b02 \
